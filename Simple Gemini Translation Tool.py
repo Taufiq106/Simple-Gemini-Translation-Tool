@@ -9,7 +9,7 @@ genai.configure(api_key=API_KEY)
 
 def translate_text(text, source_language, target_language):
     """Translates text using Gemini API."""
-    model = genai.GenerativeModel('gemini-pro')
+    model = genai.GenerativeModel('gemini-1.5-pro')
     prompt = f"Translate the following '{source_language}' text to '{target_language}': {text}"
 
     try:
